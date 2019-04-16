@@ -150,13 +150,13 @@
           class="t-cover"
           id="recorddiv92377621"
           bgimgfield="img"
-          style="height:60vh; background-image:url('https://static.tildacdn.com/tild6539-3232-4432-b933-396661336439/-/resize/20x/247_Web.jpg');"
+          style="height:60vh; background-image:url('img/background.jpg');"
         >
           <div
             class="t-cover__carrier"
             id="coverCarry92377621"
             data-content-cover-id="92377621"
-            data-content-cover-bg="https://static.tildacdn.com/tild6539-3232-4432-b933-396661336439/247_Web.jpg"
+            data-content-cover-bg="img/background.jpg"
             data-content-cover-height="60vh"
             data-content-cover-parallax=""
             style="height:60vh;background-attachment:scroll; "
@@ -187,12 +187,12 @@
                           class="t338__descr t-descr t-descr_xl"
                           field="descr"
                         >
-                          Top Techno Tracks is a weekly updated Spotify
-                          playlist. Fresh and finest tracks by the scene
-                          superstars like Adam Beyer, Amelie Lens, Sam Paganini,
-                          Enrico Sanguliano, Spartaque, Pig&amp;Dan, Coyu,
-                          Shlomi Aber and many more. Follow playlist to get your
-                          weekly updates with finest techno!
+                          The most up-to-date Techno playlist on Spotify curated
+                          by professionals of the genre. Tracks by the most
+                          prestigious artists like Adam Beyer, Amelie Lens,
+                          ANNA, Charlotte de Witte, Ellen Allien, Enrico
+                          Sanguliano, Spektre, Sam Paganini, Wehbba,
+                          Pig&amp;Dan, UMEK and many more.
                         </div>
                         <div class="t338__buttonwrapper">
                           <a
@@ -489,5 +489,36 @@
       </div>
     </div>
     <!--/allrecords-->
+    <script type="text/javascript">
+      $(document).ready(function() {
+        function onResize() {
+          var width = $(window).width();
+          if (width <= 960) {
+            $(".t823__bgimg")
+              .width(width)
+              .height(width);
+            $(".t823__col_img")
+              .width(width)
+              .height(width);
+          } else {
+            $(".t823__col_img")
+              .height("100%")
+              .width("50%");
+            $(".t823__bgimg")
+              .width(width / 2)
+              .height("100%");
+          }
+        }
+
+        function init() {
+          $(".t823__bgimg").css({ "background-size": "contain" });
+          onResize();
+        }
+
+        window.onresize = onResize;
+
+        init();
+      });
+    </script>
   </body>
 </html>
