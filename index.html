@@ -493,20 +493,14 @@
       $(document).ready(function() {
         function onResize() {
           var width = $(window).width();
+          var $img = $(".t823__bgimg");
+          var $container = $(".t823__col_img");
           if (width <= 960) {
-            $(".t823__bgimg")
-              .width(width)
-              .height(width);
-            $(".t823__col_img")
-              .width(width)
-              .height(width);
+            $container.width(width).height(width);
+            $img.width(width).height(width);
           } else {
-            $(".t823__col_img")
-              .height("100%")
-              .width("50%");
-            $(".t823__bgimg")
-              .width(width / 2)
-              .height("100%");
+            $container.height("100%").width("50%");
+            $img.width(width / 2).height("100%");
           }
         }
 
