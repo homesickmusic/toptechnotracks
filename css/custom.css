@@ -1,0 +1,105 @@
+body {
+  background-color: black;
+  min-width: 320px;
+}
+.t338__title {
+  color: white;
+}
+.t338__descr {
+  color: white;
+}
+.t338__buttonwrapper {
+  padding: 10px;
+}
+.t823__main-wrapper {
+  margin: 10px;
+}
+.t823__button {
+  color: #000000 !important;
+  background-color: #2bd636;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+}
+.t823__main-wrapper .t-form__submit {
+  margin-top: 10px;
+  text-align: center;
+}
+.t823__main-wrapper .t-input-block {
+  padding: 20px 0;
+}
+.t823__bgimg {
+  height: 800px;
+  width: 800px;
+  background-image: url("../img/top-techno-tracks.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#rec92377621 .t-btn[data-btneffects-first],
+#rec92377621 .t-btn[data-btneffects-second],
+#rec92377621 .t-submit[data-btneffects-first],
+#rec92377621 .t-submit[data-btneffects-second],
+#rec92390340 .t-btn[data-btneffects-first],
+#rec92390340 .t-btn[data-btneffects-second],
+#rec92390340 .t-submit[data-btneffects-first],
+#rec92390340 .t-submit[data-btneffects-second] {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+#rec92390340 input::-webkit-input-placeholder,
+#rec92390340 input::-moz-placeholder,
+#rec92390340 input:-moz-placeholder,
+#rec92390340 input:-ms-input-placeholder,
+#rec92390340 textarea::-webkit-input-placeholder,
+#rec92390340 textarea::-moz-placeholder,
+#rec92390340 textarea:-moz-placeholder,
+#rec92390340 textarea:-ms-input-placeholder {
+  color: #f7f7f7;
+  opacity: 0.5;
+}
+@media screen and (min-width: 1200px) {
+  .t823 {
+    padding-bottom: 0;
+  }
+  .t823__col_img {
+    display: block;
+  }
+  .t338__title {
+    font-size: 64px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1200px) {
+  .t823 {
+    padding-bottom: 100px;
+  }
+  .t823__col_img {
+    display: none;
+  }
+  .t338__title {
+    font-size: 64px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 640px) {
+  .t823 {
+    padding-bottom: 100px;
+  }
+  .t823__col_img {
+    display: none;
+  }
+  .t338__title {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .t823 {
+    padding-bottom: 100px;
+  }
+  .t823__col_img {
+    display: none;
+  }
+  .t338__title {
+    font-size: 32px;
+  }
+}
